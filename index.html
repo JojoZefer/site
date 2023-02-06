@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>jojo</title>
+<body>
+	 <header>
+	 	<div class="logo">
+	 		<img src="text.png" alt="PokeAPI">
+	 	</div>
+	 </header>
+	 <nav>
+	 	<form id="sort-form">
+	 		<h4>Sort by:</h4>
+	 		<label for="id">id:</label>
+	 		<input type="radio" name="sort" value="id" id="id" checked>
+	 		<label for="name">Name:</label>
+	 		<input type="radio" name="sort" value="name" id="name">
+	 		<label for="id">attack:</label>
+	 		<input type="radio" name="sort" value="attack" id="attack">
+	 		<label for="id">hp:</label>
+	 		<input type="radio" name="sort" value="hp" id="hp">
+	 		<label for="id">defence:</label>
+	 		<input type="radio" name="sort" value="defence" id="defence">
+	 		<h4>Order:</h4>
+	 		<label for="upsc">from smallest to biggest:</label
+	 		>
+	 		<input type="radio" name="order" value="upsc" id="upsc" checked>
+	 		<label for="desc">from biggest to smallest</label>
+	 		<input type="radio" name="order" value="desc" id="desc">
+	 	</form>
+	 	<form id="filter-form">
+	 		<h4>Filter by:</h4>
+	 		<div class="search">
+	 			<label for="name-filter">name:</label>
+	 			<input type="text" name="name-filter" id="name-filter">
+	 		</div>
+
+	 		<div class="hp-ranges">
+	 			<label for="hp-filter-from">hp from:</label>
+	 			<input type="range" name="hp-filter-from" id="hp-filter-from" min="10" max="250" value="10">
+	 			<label for="hp-filter-to">hp to:</label>
+	 			<input type="range" name="hp-filter-to" id="hp-filter-to" min="10" max="250" value="250">
+	 		</div>
+
+	 		<div class="attack-ranges">
+	 			<label for="attack-filter-from">attack-from:</label>
+	 			<input type="range" name="attack-filter-from" id="attack-filter-from" min="5" max="130" value="5">
+	 			<label for="attack-filter-to">attack to:</label>
+	 			<input type="range" name="attack-filter-to" id="attack-filter-to" min="5" max="130" value="130">
+	 		</div>
+
+      <div class="defence-ranges">
+      	<label for="defence-filter-from">defence from</label>
+      	<input type="range" name="defence-filter-from" id="defence-filter-from" min="5" max="180" value="5">
+      	<label for="defence-filter-to">defence to:</label>
+      	<input type="range" name="defence-filter-to" id="defence-filter-to" min="5" max="180" value="180">
+      </div>
+	 		<input type="submit" value="Apply filters" class="btn">
+	 	</form>
+	 </nav>
+	 <main>
+	 	<div id="results"></div>
+	 </main>
+      <script src="java.js"></script>
+</body>
+</html>
